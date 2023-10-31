@@ -9,3 +9,7 @@ function Tween(part,speed)
     tween:play()
 end
 Tween(Part.CFrame, 1)
+
+Part is any instance with Cframe
+1 is amount of time (seconds) to tween from current position to Part 
+If you have more than 5 iq you can remake it to work with positions and cframes at the same time
