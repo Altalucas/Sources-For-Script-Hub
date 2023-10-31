@@ -1,0 +1,11 @@
+local TweenService = game:GetService("TweenService")
+function Tween(part,speed)
+    local new = part
+    local char = game:GetService("Players").LocalPlayer.Character
+    local ply = char.HumanoidRootPart
+    local ti = TweenInfo.new(speed, Enum.EasingStyle.Linear)
+    local tp = {CFrame = new}
+    local tween = TweenService:Create(ply, ti, tp)
+    tween:play()
+end
+Tween(Part.CFrame, 1)
